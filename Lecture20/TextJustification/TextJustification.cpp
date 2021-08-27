@@ -53,10 +53,10 @@ int main(){
     TextJustification_main(array3, 20);
 }
 
-void TextJustification_main(const vector<string>& arr, int WidthConstraint){
+void TextJustification_main(const vector<string>& arr, int WidthConstraint){//  total time : O(n^2)
     int startIndex  =   0;
     int tmp =   startIndex;
-    while(startIndex < arr.size()){
+    while(startIndex < arr.size()){     // # of subproblems : O(arr.size()) =>  O(n)
         if((startIndex  =   TextJustification_Sub(arr, WidthConstraint, startIndex)) == -1){
             for(int i=tmp; i<arr.size(); i++)
                 cout << arr[i]  <<  ' ';
@@ -72,7 +72,7 @@ void TextJustification_main(const vector<string>& arr, int WidthConstraint){
 }
 
 int TextJustification_Sub(const vector<string>& arr, int WidthConstraint, int start){
-    // n : arr.size()
+    // n : arr.size()       only use single for loop    ->      O(n)
     vector<int>  length;
     int least, sum=0;
     for(int i=start; i<arr.size(); i++)
