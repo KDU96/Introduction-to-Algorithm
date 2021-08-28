@@ -1,16 +1,21 @@
-Ж Process to solve DP Ж
-DP ▶  Searching optimal Solution 
+# Ж Process to solve DP Ж
 
-(1) Define subprobelms ▷  # of subproblems
-(2) Guess(part of solution) ▷  choices of guess
-(3) Related subproblem solution ▷  time/subproblem
-(4) Recurse & memoize   ▷  check subproblem recurrence is acyclic and has topological order
-(5) Solve the original problem
+## DP   Searching optimal Solution 
 
-▶   Analyzation
+(1) **_Define subprobelms_** ▷  # of subproblems 
 
+(2) **_Guess(part of solution)_** ▷  choices of guess
 
-#   make1.cpp
+(3) **_Related subproblem solution_** ▷  time/subproblem
+
+(4) **_Recurse & memoize_**   ▷  check subproblem recurrence is acyclic and has topological order
+
+(5) **Solve the original problem**
+# 
+
+## ▶   Analyzation
+
+### - make1.cpp
 (1) # of subproblems    :   ϴ (n)
 
 (2) choices of guess    :   bottom-up approach & pick the min value from table
@@ -22,7 +27,7 @@ DP ▶  Searching optimal Solution
                             total time = ϴ (n^2)
 (5) Original Prob       :   DP(n) = ϴ (1) 
 
-#   sugar_delivery.cpp
+### -  sugar_delivery.cpp
 (1) # of subproblems    :   N / 3 →  ϴ (n)
 
 (2) Guess               :   find total count when # of 3kg is changed
