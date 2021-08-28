@@ -1,9 +1,9 @@
 Ж Process to solve DP Ж
 
-(1) Define subprobelms ▷  # of subproblems
-(2) Guess(part of solution) ▷  choices of guess
-(3) Related subproblem solution ▷  time/subproblem
-(4) Recurse & memoize   ▷  check subproblem recurrence is acyclic and has topological order
+(1) Define subprobelms :  # of subproblems
+(2) Guess(part of solution) :  choices of guess
+(3) Related subproblem solution :  time/subproblem
+(4) Recurse & memoize   :  check subproblem recurrence is acyclic and has topological order
 (5) Solve the original problem
 
 
