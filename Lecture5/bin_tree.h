@@ -38,6 +38,7 @@ class BinaryTree{
         bool isInternalNode_rightChild(TreeNode<T> *p) const;
         void isErrorInTree() const;
         bool isInternalNode_twoChildren(TreeNode<T> *p) const;
+        TreeNode<T>* getRootNodeAddress() const;
         //search
 };
 #endif

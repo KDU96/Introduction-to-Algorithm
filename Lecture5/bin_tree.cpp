@@ -216,4 +216,8 @@ template<typename T>
 void BinaryTree<T>::isErrorInTree() const{
     isErrorInTree(root);
 }
+template<typename >
+TreeNode<T>* BinaryTree<T>::getRootNodeAddress() const{
+    return root;
+}
 #endif
